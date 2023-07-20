@@ -16,4 +16,5 @@ app.listen(port,()=>{
     console.log(`Daraja api is on port ${port}`)
 })
 
+app.use(express.json())
 app.use("/token", TokenRoute)
