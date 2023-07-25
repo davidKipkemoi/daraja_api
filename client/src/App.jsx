@@ -4,10 +4,11 @@ import './App.css'
 function App() {
   
   return (
-   <div className="div">
-    Karibu Kenya by DAVID KIPKEMOI
-
-   </div>
+<p className="text-">Hello David</p>
+   
+    
+ 
+   
   )
 }
 
