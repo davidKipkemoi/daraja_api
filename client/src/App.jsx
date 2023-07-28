@@ -11,7 +11,7 @@ function App() {
   e.preventDefault();
   setPhone("");
   setAmount("");
-  Axios.post("http://localhost:9000/token",{
+  Axios.post("https://mpesa-qhg3.onrender.com/token",{
     phone,
     amount
   }).then((res)=>{
