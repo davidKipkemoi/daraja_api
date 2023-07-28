@@ -9,6 +9,8 @@ function App() {
 
  const paySubmit = (e)=>{
   e.preventDefault();
+  setPhone("");
+  setAmount("");
   Axios.post("http://localhost:9000/token",{
     phone,
     amount
@@ -35,9 +37,10 @@ function App() {
               alt="User Avatar"
             />
           </div>
-          <form className=" flex flex-col mb-4">
+          <form onSubmit={paySubmit} className=" flex flex-col mb-4">
             <div className="flex items-center border-b border-green-600 py-2">
               <input
+              value={phone}
                 onChange={(e)=>setPhone(e.target.value)}
                 className="w-full px-2 py-1 bg-transparent text-gray-700 focus:outline-none"
                 placeholder="Enter Phone number"
@@ -45,6 +48,7 @@ function App() {
             </div>
             <div className="flex items-center border-b border-green-600 py-2">
               <input
+              value={amount}
                onChange={(e)=>setAmount(e.target.value)}
                 className="w-full px-2 py-1 bg-transparent text-gray-700 focus:outline-none"
                 placeholder="Enter Amount"
