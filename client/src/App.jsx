@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from "axios"
+import Axios from "axios"
 import './App.css'
 import saf from "./images/640px-M-pesa-logo.png"
 
@@ -7,11 +7,11 @@ function App() {
  const [phone,setPhone] = useState(); 
  const [amount,setAmount] = useState();
 
- const paySubmit = async (e)=>{
+ const paySubmit = (e)=>{
   e.preventDefault();
   setPhone("");
   setAmount("");
-  const res = await axios.post("https://mpesa-qhg3.onrender.com/token",{
+  Axios.post("https://mpesa-qhg3.onrender.com/token",{
     phone,
     amount
   }).then((res)=>{
