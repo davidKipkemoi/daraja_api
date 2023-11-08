@@ -1,3 +1,2 @@
 # daraja_api
-This is an online Send Money application where you can send money
-to a client's phone number
+This is a Lipa na Mpesa Online where you pay by entering your phone number and amount.
