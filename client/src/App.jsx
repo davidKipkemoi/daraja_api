@@ -28,7 +28,7 @@ function App() {
             SAFARICOM TWAWEZA 
           </h1>
           <p className="text-gray-700 text-center mb-6">
-            This is a simple lipa na MPESA online service where you can send money to another person's phone.
+            This is a simple lipa na MPESA online service where you can pay from your M-Pesa.
           </p>
           <div className="flex justify-center mb-8">
             <img
