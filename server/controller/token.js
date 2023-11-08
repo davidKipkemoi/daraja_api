@@ -28,7 +28,7 @@ const createToken = async (req,res,next) =>{
     const shortCode = 174379; 
     const phone = req.body.phone.substring(1)
     const amount =req.body.amount
-    const passkey = "S1RKRmZxV0dUU0VwUW1HSmp0aFpHTTVDeE81N3BzVkM6c1JXRm9BbDc0Y2wyMld3Tw"
+    const passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
     const url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
     
     const date = new Date();
